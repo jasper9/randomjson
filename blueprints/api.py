@@ -32,7 +32,7 @@ class helloWorld(Resource):
         return jsonify(txt)
 
 
-@api.route('/Planets')
+@api.route('/objects/planets')
 class Planets(Resource):
     def get(self):
         '''Planets'''

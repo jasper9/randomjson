@@ -16,7 +16,7 @@ config.read('config.ini')
 
 def connectDB():
 
-    db_host = localhost
+    db_host = "localhost"
     db_user = config['mysql']['username']
     db_pass = config['mysql']['password']
     db_name = config['mysql']['database_name']
