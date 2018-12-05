@@ -10,7 +10,6 @@ from multiprocessing import cpu_count
 from sys import stderr
 import logging
 
-from auth import auth
 from app import flaskapp
 
 port = int(os.getenv("PORT", 9099))
