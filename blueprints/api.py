@@ -37,9 +37,10 @@ class Planets(Resource):
     def get(self):
         '''Planets'''
         db = connectDB()
+
+        txt = ["planets"]
         with db.cursor() as cursor:
             sql = "select name from obj_planets ORDER BY RAND() limit 1"
-            log_sql(sql)
             cursor.execute(sql)
             for row in cursor:
                 txt.append(row['name'])
