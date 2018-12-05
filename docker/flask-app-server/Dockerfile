@@ -8,10 +8,10 @@ RUN yum -y install https://centos7.iuscommunity.org/ius-release.rpm -y
 
 RUN yum -y install python36u python36u-pip python36u-devel openssl-devel openssl
 
-WORKDIR /var/env/innkeeper2
+WORKDIR /var/env/app
 
 RUN pip3.6 install flask==1.0.2 configparser==3.5.0 pymysql==0.8.1 gunicorn==19.8.1 flask_restplus==0.11.0
 
 EXPOSE 5000
 
-ENTRYPOINT ["gunicorn", "--config", "gunicorn.conf", "--log-config", "logging.conf", "-b", ":5000", "server:flaskapp"]
+ENTRYPOINT ["gunicorn", "--log-config", "logging.conf", "-b", ":5000", "server:flaskapp"]
