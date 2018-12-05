@@ -17,12 +17,13 @@ def connectDB():
     db_name = config['backend']['db_name']
 
 
-    db = pymysql.connect(host=db_host,
-        user=db_user,
-        password=db_pass,
-        db=db_name,
-        charset='utf8mb4',
-        cursorclass=pymysql.cursors.DictCursor)
+    db = pymysql.connect(
+        host        =   db_host,
+        user        =   db_user,
+        password    =   db_pass,
+        db          =   db_name,
+        charset     =   'utf8mb4',
+        cursorclass =   pymysql.cursors.DictCursor)
 
     db.cursor()
     return(db)
