@@ -5,6 +5,7 @@ from flask_restplus import Resource, Api, apidoc, reqparse, fields, Model, abort
 import sys, os, string, random, re
 from random import choice
 from . import config
+from common import *
 
 api_v1 = Blueprint('api', 'api', url_prefix='/api/v1')
 

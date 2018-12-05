@@ -28,11 +28,3 @@ from blueprints.api import api_v1
 
 flaskapp.register_blueprint(api_v1)
 #flaskapp.register_blueprint(ui)
-
-#flaskapp.config.from_object(Config())
-#scheduler = APScheduler()
-#scheduler.init_app(flaskapp)
-#scheduler.start()
-
-#this is scheduled to run check_pipelines() every 5 minus, but lets force one at the start:
-#check_pipelines()
