@@ -29,7 +29,7 @@ flaskapp.config['SECRET_KEY'] = config['other']['flask_key']
 #flaskapp.register_blueprint(api_v1)
 #flaskapp.register_blueprint(ui)
 
-flaskapp.config.from_object(Config())
+#flaskapp.config.from_object(Config())
 #scheduler = APScheduler()
 #scheduler.init_app(flaskapp)
 #scheduler.start()
