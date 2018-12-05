@@ -17,6 +17,7 @@ def connectDB():
     db_name = config['backend']['db_name']
 
     print("DB PASS: "+db_pass)
+
     db = pymysql.connect(
         host        =   db_host,
         user        =   db_user,
