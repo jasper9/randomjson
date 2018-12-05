@@ -23,10 +23,10 @@ flaskapp.logger.debug("Hello World----------------------------------------------
 flaskapp.config['SECRET_KEY'] = config['other']['flask_key']
 
 
-#from blueprints.api import api_v1
+from blueprints.api import api_v1
 #from blueprints.ui import ui
 
-#flaskapp.register_blueprint(api_v1)
+flaskapp.register_blueprint(api_v1)
 #flaskapp.register_blueprint(ui)
 
 #flaskapp.config.from_object(Config())
