@@ -18,7 +18,7 @@ def connectDB():
 
     db_host = "10.142.0.4"
     db_user = config['mysql']['user']
-    db_pass = config['mysql']['password']
+    db_pass = config['mysql']['pass']
     db_name = config['mysql']['database_name']
 
 
