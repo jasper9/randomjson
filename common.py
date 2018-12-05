@@ -21,9 +21,7 @@ def connectDB():
         host        =   db_host,
         user        =   db_user,
         password    =   db_pass,
-        db          =   db_name,
-        charset     =   'utf8mb4',
-        cursorclass =   pymysql.cursors.DictCursor)
+        db          =   db_name)
 
     db.cursor()
     return(db)
