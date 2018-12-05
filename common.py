@@ -11,10 +11,10 @@ config.read('config.ini')
 
 def connectDB():
 
-    db_host = "10.142.0.4"
-    db_user = config['backend']['user']
-    db_pass = config['backend']['pass']
-    db_name = config['backend']['database_name']
+    db_host = config['backend']['db_host']
+    db_user = config['backend']['db_user']
+    db_pass = config['backend']['db_pass']
+    db_name = config['backend']['db_name']
 
 
     db = pymysql.connect(host=db_host,
