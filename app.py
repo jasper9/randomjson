@@ -30,9 +30,9 @@ flaskapp.config['SECRET_KEY'] = config['other']['flask_key']
 #flaskapp.register_blueprint(ui)
 
 flaskapp.config.from_object(Config())
-scheduler = APScheduler()
-scheduler.init_app(flaskapp)
-scheduler.start()
+#scheduler = APScheduler()
+#scheduler.init_app(flaskapp)
+#scheduler.start()
 
 #this is scheduled to run check_pipelines() every 5 minus, but lets force one at the start:
-check_pipelines()
+#check_pipelines()
