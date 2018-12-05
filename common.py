@@ -6,20 +6,15 @@ import sys, os, string, random
 from random import choice
 import configparser
 
-
-
-
 config = configparser.ConfigParser()
 config.read('config.ini')
-
-
 
 def connectDB():
 
     db_host = "10.142.0.4"
-    db_user = config['mysql']['user']
-    db_pass = config['mysql']['pass']
-    db_name = config['mysql']['database_name']
+    db_user = config['backend']['user']
+    db_pass = config['backend']['pass']
+    db_name = config['backend']['database_name']
 
 
     db = pymysql.connect(host=db_host,
