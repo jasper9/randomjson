@@ -26,7 +26,7 @@ api = Api(api_v1, version='1.0', title='API',
 class helloWorld(Resource):
     def get(self):
         '''helloWorld'''
-        log_debug('ENTERING :: /helloWorld')
+        #log_debug('ENTERING :: /helloWorld')
         
         txt = {'value': 'ok'}
         return jsonify(txt)
